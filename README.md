@@ -1,2 +1,22 @@
-# Baezj.github.io
-Magic Domino Developer Website
+# Magic Domino: AI Scorekeeper™
+
+The ultimate AI-powered domino scorekeeper for iOS.
+
+## 🎯 Features
+- 🤖 **AI-Powered Counting** - Instantly count domino pips with your camera
+- 🏆 **Tournament Mode** - Run professional tournaments with brackets
+- 📊 **Score Tracking** - Keep detailed game history
+- 🎨 **Beautiful Themes** - Customize your experience
+- ☁️ **iCloud Sync** - Access your games across all devices
+
+## 📱 Download
+
+[Download on the App Store](https://apps.apple.com/app/magic-domino-ai-scorekeeper/id6738494348)
+
+## 🆘 Support
+
+Need help? Email us at: [your-email@example.com](mailto:your-email@example.com)
+
+---
+
+© 2025 Magic Domino. All rights reserved.
