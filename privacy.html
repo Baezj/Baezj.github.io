@@ -76,6 +76,37 @@
             color: #007AFF;
         }
         
+        footer {
+            max-width: 800px;
+            margin: 3rem auto 0;
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: #9CA3AF;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .footer-links a:hover {
+            color: #007AFF;
+        }
+        
+        .copyright {
+            color: #6B7280;
+            font-size: 0.9rem;
+        }
+        
         @media (max-width: 768px) {
             body {
                 padding: 1rem;
@@ -91,6 +122,15 @@
             
             h2 {
                 font-size: 1.3rem;
+            }
+            
+            footer {
+                margin-top: 2rem;
+                padding: 1.5rem 1rem;
+            }
+            
+            .footer-links {
+                gap: 1rem;
             }
         }
     </style>
@@ -163,5 +203,17 @@
             <br><a href="mailto:magicdominoapp@gmail.com">magicdominoapp@gmail.com</a>
         </p>
     </div>
+    
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="support.html">Support</a>
+            <a href="mailto:magicdominoapp@gmail.com">Contact</a>
+        </div>
+        <p class="copyright">
+            © 2025 Magic Domino™. All rights reserved.
+        </p>
+    </footer>
 </body>
 </html>
