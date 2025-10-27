@@ -73,15 +73,15 @@
         .contact-box {
             background: rgba(0, 122, 255, 0.1);
             border: 1px solid rgba(0, 122, 255, 0.3);
-            padding: 1.5rem;
+            padding: 1rem;
             border-radius: 10px;
-            margin: 2rem 0;
-            text-align: center;
+            margin: 1.5rem 0;
         }
         
         .contact-box a {
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: 600;
+            word-break: break-all;
         }
         
         .faq-item {
@@ -92,6 +92,33 @@
             font-weight: 600;
             color: #FFFFFF;
             margin-bottom: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .container {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.3rem;
+            }
+            
+            .contact-box {
+                padding: 0.75rem;
+                margin: 1rem 0;
+            }
+            
+            .contact-box a {
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
@@ -105,7 +132,7 @@
         </p>
         
         <div class="contact-box">
-            <p>📧 Contact us at:</p>
+            <p style="margin-bottom: 0.5rem;">📧 Contact us:</p>
             <a href="mailto:magicdominoapp@gmail.com">magicdominoapp@gmail.com</a>
         </div>
         
