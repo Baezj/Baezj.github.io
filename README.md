@@ -11,7 +11,7 @@ The ultimate AI-powered domino scorekeeper for iOS.
 
 ## 📱 Download
 
-[Download on the App Store]([link:https://apps.apple.com/app/magic-domino-ai-scorekeeper/id6738494348](https://apps.apple.com/us/app/magic-domino-ai-scorekeeper/id6747228055?uo=4))
+[Download on the App Store](https://apps.apple.com/app/magic-domino-ai-scorekeeper/id6738494348](https://apps.apple.com/us/app/magic-domino-ai-scorekeeper/id6747228055?uo=4)
 
 ## 🆘 Support
 
