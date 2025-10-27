@@ -15,7 +15,7 @@ The ultimate AI-powered domino scorekeeper for iOS.
 
 ## 🆘 Support
 
-Need help? Email us at: [mailto:magicdominoapp@gmail.com](mailto:magicdominoapp@gmail.com)
+Need help? Email us at: [magicdominoapp@gmail.com](mailto:magicdominoapp@gmail.com)
 
 ---
 
