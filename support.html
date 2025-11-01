@@ -14,49 +14,27 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-            background: linear-gradient(135deg, #0A0E1A 0%, #1a1a2e 100%);
-            color: #FFFFFF;
-            line-height: 1.8;
-            padding: 2rem;
-        }
-        
-        .container {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
             max-width: 800px;
             margin: 0 auto;
-            background: rgba(26, 31, 53, 0.8);
-            padding: 3rem;
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            color: #333;
         }
         
         h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, #007AFF, #8B5CF6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
         }
         
         h2 {
-            font-size: 1.5rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            color: #007AFF;
-        }
-        
-        p, li {
-            color: #9CA3AF;
-            margin-bottom: 1rem;
-        }
-        
-        ul {
-            margin-left: 2rem;
+            color: #34495e;
+            margin-top: 30px;
         }
         
         a {
-            color: #007AFF;
+            color: #3498db;
             text-decoration: none;
         }
         
@@ -66,15 +44,15 @@
         
         .back-link {
             display: inline-block;
-            margin-bottom: 2rem;
-            color: #007AFF;
+            margin-bottom: 20px;
+            color: #3498db;
         }
         
         .contact-box {
-            background: rgba(0, 122, 255, 0.1);
-            border: 1px solid rgba(0, 122, 255, 0.3);
+            background: #e3f2fd;
+            border: 1px solid #90caf9;
             padding: 1rem;
-            border-radius: 10px;
+            border-radius: 8px;
             margin: 1.5rem 0;
         }
         
@@ -90,7 +68,7 @@
         
         .faq-question {
             font-weight: 600;
-            color: #FFFFFF;
+            color: #2c3e50;
             margin-bottom: 0.5rem;
         }
         
@@ -99,7 +77,7 @@
             margin: 3rem auto 0;
             padding: 2rem;
             text-align: center;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 1px solid #ddd;
         }
         
         .footer-links {
@@ -111,37 +89,21 @@
         }
         
         .footer-links a {
-            color: #9CA3AF;
+            color: #666;
             text-decoration: none;
             transition: color 0.2s;
         }
         
         .footer-links a:hover {
-            color: #007AFF;
+            color: #3498db;
         }
         
         .copyright {
-            color: #6B7280;
+            color: #999;
             font-size: 0.9rem;
         }
         
         @media (max-width: 768px) {
-            body {
-                padding: 1rem;
-            }
-            
-            .container {
-                padding: 1.5rem;
-            }
-            
-            h1 {
-                font-size: 2rem;
-            }
-            
-            h2 {
-                font-size: 1.3rem;
-            }
-            
             .contact-box {
                 padding: 0.75rem;
                 margin: 1rem 0;
@@ -163,100 +125,99 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <a href="index.html" class="back-link">← Back to Home</a>
-        
-        <h1>Support</h1>
-        <p>
-            Need help with Magic Domino? We're here to assist you!
-        </p>
-        
-        <div class="contact-box">
-            <p style="margin-bottom: 0.5rem;">📧 Contact us:</p>
-            <a href="mailto:magicdominoapp@gmail.com">magicdominoapp@gmail.com</a>
-        </div>
-        
-        <h2>Frequently Asked Questions</h2>
-        
-        <div class="faq-item">
-            <p class="faq-question">Q: How does AI score counting work?</p>
-            <p>A: Point your camera at your dominoes using the camera icon in the app. Our AI will automatically detect and count the pips in real-time as the dominoes appear in view. Make sure the dominoes are clearly visible and well-lit for best results.</p>
-        </div>
-        
-        <div class="faq-item">
-            <p class="faq-question">Q: What's included in the free version?</p>
-            <p>A: The free version includes basic score tracking for 2-4 players, 3 free AI counting uses, and limited themes. You can play unlimited games!</p>
-        </div>
-        
-        <div class="faq-item">
-            <p class="faq-question">Q: What does Premium include?</p>
-            <p>A: Premium unlocks unlimited AI counting, ad-free experience, tournament mode, all themes and animations, iCloud sync, and game sharing. Try it free for 14 days!</p>
-        </div>
-        
-        <div class="faq-item">
-            <p class="faq-question">Q: How do I restore my Premium purchase?</p>
-            <p>A: Go to Settings → tap "Upgrade" → On the paywall screen, tap "Restore Purchase" at the top right. Your purchase is tied to your Apple ID and will be restored automatically.</p>
-        </div>
-        
-        <div class="faq-item">
-            <p class="faq-question">Q: Can I sync my games across devices?</p>
-            <p>A: Yes! With a Premium subscription, your game history syncs automatically via iCloud across all your Apple devices.</p>
-        </div>
-        
-        <div class="faq-item">
-            <p class="faq-question">Q: How do I cancel my subscription?</p>
-            <p>A: Subscriptions are managed through Apple. Go to Settings → [Your Name] → Subscriptions → Magic Domino → Cancel Subscription.</p>
-        </div>
-        
-        <div class="faq-item">
-            <p class="faq-question">Q: How does Tournament Mode work?</p>
-            <p>A: Create a tournament with 4, 8, 16, or 32 players. The app automatically generates brackets and tracks winners through each round until a champion is crowned!</p>
-        </div>
-        
-        <div class="faq-item">
-            <p class="faq-question">Q: Can I share my games with friends?</p>
-            <p>A: Yes! Premium users can export game states and share them with friends to continue playing later.</p>
-        </div>
-        
-        <div class="faq-item">
-            <p class="faq-question">Q: The AI isn't counting correctly. What should I do?</p>
-            <p>A: Make sure your dominoes are:
-                <ul style="margin-top: 0.5rem;">
-                    <li>Well-lit and clearly visible in the camera view</li>
-                    <li>Not overlapping each other</li>
-                    <li>Against a contrasting background</li>
-                    <li>Held steady for the AI to detect them</li>
-                </ul>
-                If issues persist, you can always manually enter the score.
-            </p>
-        </div>
-        
-        <h2>Feature Requests & Feedback</h2>
-        <p>
-            We love hearing from our users! If you have suggestions for new features or improvements, please email us at <a href="mailto:magicdominoapp@gmail.com">magicdominoapp@gmail.com</a>
-        </p>
-        
-        <h2>Report a Bug</h2>
-        <p>
-            Found a bug? Please let us know by emailing <a href="mailto:magicdominoapp@gmail.com">magicdominoapp@gmail.com</a> with:
-        </p>
-        <ul>
-            <li>Description of the issue</li>
-            <li>Steps to reproduce it</li>
-            <li>Your device model and iOS version</li>
-            <li>Screenshots if possible</li>
-        </ul>
-        
-        <h2>Response Time</h2>
-        <p>
-            We typically respond to all support requests within 24-48 hours. Thank you for your patience!
+    <a href="index.html" class="back-link">← Back to Home</a>
+    
+    <h1>Support</h1>
+    <p>
+        Need help with Magic Domino? We're here to assist you!
+    </p>
+    
+    <div class="contact-box">
+        <p style="margin-bottom: 0.5rem;">📧 Contact us:</p>
+        <a href="mailto:magicdominoapp@gmail.com">magicdominoapp@gmail.com</a>
+    </div>
+    
+    <h2>Frequently Asked Questions</h2>
+    
+    <div class="faq-item">
+        <p class="faq-question">Q: How does AI score counting work?</p>
+        <p>A: Point your camera at your dominoes using the camera icon in the app. Our AI will automatically detect and count the pips in real-time as the dominoes appear in view. Make sure the dominoes are clearly visible and well-lit for best results.</p>
+    </div>
+    
+    <div class="faq-item">
+        <p class="faq-question">Q: What's included in the free version?</p>
+        <p>A: The free version includes basic score tracking for 2-4 players, 3 free AI counting uses, and limited themes. You can play unlimited games!</p>
+    </div>
+    
+    <div class="faq-item">
+        <p class="faq-question">Q: What does Premium include?</p>
+        <p>A: Premium unlocks unlimited AI counting, ad-free experience, tournament mode, all themes and animations, iCloud sync, and game sharing. Try it free for 14 days!</p>
+    </div>
+    
+    <div class="faq-item">
+        <p class="faq-question">Q: How do I restore my Premium purchase?</p>
+        <p>A: Go to Settings → tap "Upgrade" → On the paywall screen, tap "Restore Purchase" at the top right. Your purchase is tied to your Apple ID and will be restored automatically.</p>
+    </div>
+    
+    <div class="faq-item">
+        <p class="faq-question">Q: Can I sync my games across devices?</p>
+        <p>A: Yes! With a Premium subscription, your game history syncs automatically via iCloud across all your Apple devices.</p>
+    </div>
+    
+    <div class="faq-item">
+        <p class="faq-question">Q: How do I cancel my subscription?</p>
+        <p>A: Subscriptions are managed through Apple. Go to Settings → [Your Name] → Subscriptions → Magic Domino → Cancel Subscription.</p>
+    </div>
+    
+    <div class="faq-item">
+        <p class="faq-question">Q: How does Tournament Mode work?</p>
+        <p>A: Create a tournament with 4, 8, 16, or 32 players. The app automatically generates brackets and tracks winners through each round until a champion is crowned!</p>
+    </div>
+    
+    <div class="faq-item">
+        <p class="faq-question">Q: Can I share my games with friends?</p>
+        <p>A: Yes! Premium users can export game states and share them with friends to continue playing later.</p>
+    </div>
+    
+    <div class="faq-item">
+        <p class="faq-question">Q: The AI isn't counting correctly. What should I do?</p>
+        <p>A: Make sure your dominoes are:
+            <ul style="margin-top: 0.5rem;">
+                <li>Well-lit and clearly visible in the camera view</li>
+                <li>Not overlapping each other</li>
+                <li>Against a contrasting background</li>
+                <li>Held steady for the AI to detect them</li>
+            </ul>
+            If issues persist, you can always manually enter the score.
         </p>
     </div>
+    
+    <h2>Feature Requests & Feedback</h2>
+    <p>
+        We love hearing from our users! If you have suggestions for new features or improvements, please email us at <a href="mailto:magicdominoapp@gmail.com">magicdominoapp@gmail.com</a>
+    </p>
+    
+    <h2>Report a Bug</h2>
+    <p>
+        Found a bug? Please let us know by emailing <a href="mailto:magicdominoapp@gmail.com">magicdominoapp@gmail.com</a> with:
+    </p>
+    <ul>
+        <li>Description of the issue</li>
+        <li>Steps to reproduce it</li>
+        <li>Your device model and iOS version</li>
+        <li>Screenshots if possible</li>
+    </ul>
+    
+    <h2>Response Time</h2>
+    <p>
+        We typically respond to all support requests within 24-48 hours. Thank you for your patience!
+    </p>
     
     <footer>
         <div class="footer-links">
             <a href="index.html">Home</a>
             <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Use</a>
             <a href="support.html">Support</a>
             <a href="mailto:magicdominoapp@gmail.com">Contact</a>
         </div>
