@@ -16,10 +16,62 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
+            color: #333;
+        }
+        
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #e0e0e0;
+            padding: 1rem 2rem;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .navbar-brand {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .navbar-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .navbar-links a {
+            color: #666;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        
+        .navbar-links a:hover {
+            color: #3498db;
+        }
+        
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: #333;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        .content {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
-            color: #333;
+            padding: 100px 20px 20px;
         }
         
         h1 {
@@ -42,12 +94,6 @@
             text-decoration: underline;
         }
         
-        .back-link {
-            display: inline-block;
-            margin-bottom: 20px;
-            color: #3498db;
-        }
-        
         .last-updated {
             color: #7f8c8d;
             font-style: italic;
@@ -59,11 +105,10 @@
         }
         
         footer {
-            max-width: 800px;
-            margin: 3rem auto 0;
-            padding: 2rem;
+            padding: 3rem 2rem;
             text-align: center;
-            border-top: 1px solid #ddd;
+            background: #f8f9fa;
+            border-top: 1px solid #e0e0e0;
         }
         
         .footer-links {
@@ -90,8 +135,36 @@
         }
         
         @media (max-width: 768px) {
+            .navbar {
+                padding: 1rem;
+            }
+            
+            .navbar-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(255, 255, 255, 0.98);
+                flex-direction: column;
+                padding: 1rem;
+                gap: 1rem;
+                border-bottom: 1px solid #e0e0e0;
+            }
+            
+            .navbar-links.active {
+                display: flex;
+            }
+            
+            .mobile-menu-toggle {
+                display: block;
+            }
+            
+            .content {
+                padding: 80px 20px 20px;
+            }
+            
             footer {
-                margin-top: 2rem;
                 padding: 1.5rem 1rem;
             }
             
@@ -102,10 +175,21 @@
     </style>
 </head>
 <body>
-    <a href="index.html" class="back-link">← Back to Home</a>
-    
-    <h1>Privacy Policy</h1>
-    <p class="last-updated">Last updated: October 27, 2025</p>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">Magic Domino™</a>
+        <button class="mobile-menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="navbar-links" id="navbarLinks">
+            <a href="index.html">Home</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+            <a href="support.html">Support</a>
+            <a href="mailto:magicdominoapp@gmail.com">Contact</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last updated: October 27, 2025</p>
     
     <h2>Your Privacy Matters</h2>
     <p>
@@ -190,6 +274,7 @@
         If you have any questions about this Privacy Policy, please contact us at:
         <br><a href="mailto:magicdominoapp@gmail.com">magicdominoapp@gmail.com</a>
     </p>
+    </div>
     
     <footer>
         <div class="footer-links">
@@ -203,5 +288,12 @@
             © 2025 Magic Domino™. All rights reserved.
         </p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navbarLinks');
+            navLinks.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
